@@ -2,15 +2,34 @@
 # This file is distributed under the same license as the Twenty Fourteen package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2014-05-07 10:22:33+0000\n"
+"PO-Revision-Date: 2015-05-12 12:10:09+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: GlotPress/0.1\n"
+"X-Generator: GlotPress/1.0-alpha-1000\n"
 "Project-Id-Version: Twenty Fourteen\n"
 
-#: inc/customizer.php:102
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentyfourteen/"
+msgstr "https://wordpress.org/themes/twentyfourteen/"
+
+#. Author URI of the plugin/theme
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+#. translators: %s: Name of current post
+#: content-aside.php:48 content-audio.php:48 content-gallery.php:48
+#: content-image.php:48 content-link.php:48 content-quote.php:48
+#: content-video.php:48 content.php:56 inc/template-tags.php:222
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Pokračování textu %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: inc/customizer.php:31 inc/customizer.php:32
+msgid "May only be visible on wide screens."
+msgstr "Nastavení bude použito pouze na dostatečně širokých zařízeních."
+
+#: inc/customizer.php:108
 msgid "The home page features your choice of up to 6 posts prominently displayed in a grid or slider, controlled by a <a href=\"%1$s\">tag</a>; you can change the tag and layout in <a href=\"%2$s\">Appearance &rarr; Customize</a>. If no posts match the tag, <a href=\"%3$s\">sticky posts</a> will be displayed instead."
 msgstr "Na úvodní stránce můžete nápadně zvýraznit až 6 příspěvků, které chcete návštěvníkům z nějakého důvodu doporučit, a zobrazit je buď v podobě pravidelné mřížky (dlaždice) nebo umožnit jejich přehledné posunování. Pro výběr doporučených příspěvků slouží speciální <a href=\"%1$s\">štítek</a>, který lze snadno měnit (stejně jako způsob zobrazení) v menu <a href=\"%2$s\">Vzhled &rarr; Přizpůsobit</a>. Pokud tímto způsobem nic neoznačíte, automaticky se budou zobrazovat <a href=\"%3$s\">zvýrazněné příspěvky</a>."
 
@@ -38,12 +57,13 @@ msgstr "Další galerie"
 msgid "More asides"
 msgstr "Další poznámky"
 
+#. translators: used with More archives link
 #: inc/widgets.php:206
 msgid "%s <span class=\"meta-nav\">&rarr;</span>"
 msgstr "%s <span class=\"meta-nav\">&rarr;</span>"
 
-#: inc/customizer.php:37 inc/customizer.php:102 inc/featured-content.php:407
-#: inc/featured-content.php:416 inc/featured-content.php:476
+#: inc/customizer.php:42 inc/customizer.php:108 inc/featured-content.php:405
+#: inc/featured-content.php:414 inc/featured-content.php:474
 msgctxt "featured content default tag slug"
 msgid "featured"
 msgstr "doporuceno"
@@ -52,10 +72,7 @@ msgstr "doporuceno"
 msgid "Use this widget to list your recent Aside, Quote, Video, Audio, Image, Gallery, and Link posts."
 msgstr "Speciální widget pro zobrazení nejnovějších stručných příspěvků (Poznámky, Citace, Video, Audio, Obrázky, Galerie a Odkazy)."
 
-msgid "http://wordpress.org/themes/twentyfourteen"
-msgstr "http://wordpress.org/themes/twentyfourteen"
-
-#: inc/customizer.php:36 inc/featured-content.php:406
+#: inc/customizer.php:41 inc/featured-content.php:404
 msgid "Use a <a href=\"%1$s\">tag</a> to feature your posts. If no posts match the tag, <a href=\"%2$s\">sticky posts</a> will be displayed instead."
 msgstr "Pro výběr doporučených příspěvků můžete použít speciální <a href=\"%1$s\">štítek</a>. Pokud tímto způsobem nic neoznačíte, automaticky se budou zobrazovat <a href=\"%2$s\">zvýrazněné příspěvky</a>."
 
@@ -63,11 +80,11 @@ msgstr "Pro výběr doporučených příspěvků můžete použít speciální <
 msgid "Not Found"
 msgstr "Nenalezeno"
 
-#: inc/customizer.php:31
+#: inc/customizer.php:27
 msgid "Display Site Title &amp; Tagline"
 msgstr "Zobrazovat název a popis webu"
 
-#: inc/customizer.php:104
+#: inc/customizer.php:110
 msgid "For an in-depth tutorial, and more tips and tricks, visit the <a href=\"%s\">Twenty Fourteen documentation</a>."
 msgstr "Podrobnější návod a další zajímavé tipy pro práci se šablonou naleznete v <a href=\"%s\">manuálu pro Twenty Fourteen</a>."
 
@@ -81,26 +98,27 @@ msgctxt "yearly archives date format"
 msgid "Y"
 msgstr "Y"
 
-#: inc/customizer.php:28
+#: inc/customizer.php:24
 msgid "Site Title Color"
 msgstr "Barva pro název webu"
 
-#: inc/featured-content.php:428
+#: inc/featured-content.php:426
 msgid "Tag Name"
 msgstr "Název štítku"
 
-#: inc/featured-content.php:433
+#: inc/featured-content.php:431
 msgid "Don&rsquo;t display tag on front end."
 msgstr "Nezobrazovat štítek na webu."
 
+#. Description of the plugin/theme
 msgid "In 2014, our default theme lets you create a responsive magazine website with a sleek, modern design. Feature your favorite homepage content in either a grid or a slider. Use the three widget areas to customize your website, and change your content's layout with a full-width page template and a contributor page to show off your authors. Creating a magazine website with WordPress has never been easier."
 msgstr "Twenty Fourteen (2014) je nová výchozí šablona pro WordPress, která je ideální zejména pro různé magazíny. Jednou z hlavních předností je flexibilní a moderní vzhled, který se automaticky přizpůsobí různým zařízením. S její pomocí můžete snadno zvýraznit doporučený obsah webu a zobrazit ho v podobě pravidelné mřížky (dlaždice) nebo přehledného posunování jednotlivých položek. V šabloně jsou definovány celkem 3 oblasti pro widgety (levý a pravý postranní panel, zápatí), takže si můžete některé části webu snadno přizpůsobit. Twenty Fourteen obsahuje i speciální widget (určen pro zobrazování nejnovějších stručných příspěvků) a volitelné šablony pro stránky (přehled autorů webu a zobrazení bez pravého postranního panelu). Tvorba vlastního webového magazínu ve WordPressu ještě nikdy nebyla snadnější a příjemnější."
 
-#: functions.php:254
+#: functions.php:258
 msgid "Previous"
 msgstr "Předchozí"
 
-#: functions.php:255
+#: functions.php:259
 msgid "Next"
 msgstr "Další"
 
@@ -131,7 +149,7 @@ msgstr "Zápatí"
 msgid "Appears in the footer section of the site."
 msgstr "Oblast pro umístění widgetů, které se budou zobrazovat v dolní části webu."
 
-#: functions.php:372
+#: functions.php:376
 msgid "%d Article"
 msgid_plural "%d Articles"
 msgstr[0] "%d příspěvek"
@@ -150,27 +168,27 @@ msgstr "Další obrázek"
 msgid "Twenty Fourteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
 msgstr "Šablona Twenty Fourteen vyžaduje alespoň WordPress 3.6, zatímco aktuálně používáte starší verzi %s. Nejdříve prosím proveďte aktualizaci a potom to můžete zkusit znovu."
 
-#: inc/customizer.php:19 inc/customizer.php:20
+#: inc/customizer.php:34 inc/customizer.php:35
 msgid "Background may only be visible on wide screens."
 msgstr "Pozadí bude zobrazeno pouze na dostatečně širokých zařízeních."
 
-#: inc/customizer.php:35 inc/featured-content.php:405
+#: inc/customizer.php:40 inc/featured-content.php:403
 msgid "Featured Content"
 msgstr "Doporučený obsah"
 
-#: inc/customizer.php:50
+#: inc/customizer.php:56
 msgid "Layout"
 msgstr "Způsob zobrazení"
 
-#: inc/customizer.php:54
+#: inc/customizer.php:60
 msgid "Grid"
 msgstr "Dlaždice (mřížka)"
 
-#: inc/customizer.php:55
+#: inc/customizer.php:61
 msgid "Slider"
 msgstr "Posunovací položky"
 
-#: inc/customizer.php:103
+#: inc/customizer.php:109
 msgid "Enhance your site design by using <a href=\"%s\">Featured Images</a> for posts you&rsquo;d like to stand out (also known as post thumbnails). This allows you to associate an image with your post without inserting it. Twenty Fourteen uses featured images for posts and pages&mdash;above the title&mdash;and in the Featured Content area on the home page."
 msgstr "Vzhled webu můžete ovlivnit také pomocí vhodných <a href=\"%s\">náhledových obrázků</a>, a to zejména u příspěvků, které chcete nějakým způsobem zdůraznit. Snadno tak přiřadíte zvolený obrázek ke konkrétnímu příspěvku, aniž byste ho museli vkládat přímo do textu. Šablona Twenty Fourteen podporuje náhledové obrázky u příspěvků a stránek (jsou zobrazovány nad jejich názvem) a samozřejmě i v oblasti pro doporučené příspěvky na úvodní stránce."
 
@@ -217,6 +235,7 @@ msgstr "Počet zobrazených příspěvků:"
 msgid "Post format to show:"
 msgstr "Formát zobrazených příspěvků:"
 
+#. Template Name of the plugin/theme
 msgid "Contributor Page"
 msgstr "Stránka s přehledem autorů"
 
@@ -267,9 +286,9 @@ msgstr "Novější komentáře &rarr;"
 msgid "Comments are closed."
 msgstr "Komentáře nejsou povoleny."
 
-#: content-aside.php:48 content-audio.php:48 content-gallery.php:48
-#: content-image.php:48 content-link.php:48 content-page.php:22
-#: content-quote.php:48 content-video.php:48 content.php:56 image.php:54
+#: content-aside.php:53 content-audio.php:53 content-gallery.php:53
+#: content-image.php:53 content-link.php:53 content-page.php:22
+#: content-quote.php:53 content-video.php:53 content.php:61 image.php:54
 msgid "Pages:"
 msgstr "Stránky:"
 
@@ -298,9 +317,7 @@ msgstr "1 komentář"
 msgid "% Comments"
 msgstr "% komentáře"
 
-#: content-aside.php:46 content-audio.php:46 content-gallery.php:46
-#: content-image.php:46 content-link.php:46 content-quote.php:46
-#: content-video.php:46 content.php:54 inc/widgets.php:127 inc/widgets.php:172
+#: inc/widgets.php:127 inc/widgets.php:172
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Pokračování textu <span class=\"meta-nav\">&rarr;</span>"
 
@@ -332,12 +349,14 @@ msgstr "Hlavní postranní panel se zobrazuje v levé části webu."
 msgid "Content Sidebar"
 msgstr "Pravý postranní panel"
 
+#. Translators: If there are characters in your language that are not supported
+#. by Lato, translate this to 'off'. Do not translate into your own language.
 #: functions.php:213
 msgctxt "Lato font: on or off"
 msgid "on"
 msgstr "off"
 
-#: functions.php:491
+#: functions.php:495
 msgid "Page %s"
 msgstr "%s. stránka"
 
@@ -417,12 +436,16 @@ msgstr "Citace"
 msgid "Search Results for: %s"
 msgstr "Výsledky vyhledávání pro: %s"
 
-#: inc/customizer.php:99
+#. #-#-#-#-#  twentyfourteen.pot (Twenty Fourteen 1.4)  #-#-#-#-#
+#. Theme Name of the plugin/theme
+#: inc/customizer.php:105
 msgid "Twenty Fourteen"
 msgstr "Twenty Fourteen"
 
+#. Author of the plugin/theme
 msgid "the WordPress team"
 msgstr "Vývojáři WordPressu (a překladatelé)"
 
+#. Template Name of the plugin/theme
 msgid "Full Width Page"
 msgstr "Stránka bez postranního panelu"
