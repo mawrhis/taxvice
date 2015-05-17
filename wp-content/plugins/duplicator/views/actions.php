@@ -1,4 +1,5 @@
 <?php
+
 /**
  *  DUPLICATOR_PACKAGE_SCAN
  *  Returns a json scan report object which contains data about the system
@@ -7,6 +8,8 @@
  *  @example	   to test: /wp-admin/admin-ajax.php?action=duplicator_package_scan
  */
 function duplicator_package_scan() {
+	
+	DUP_Util::CheckPermissions('export');
 	
 	@set_time_limit(0);
 	$errLevel = error_reporting();
@@ -30,6 +33,8 @@ function duplicator_package_scan() {
  *  @return json   json object of package results
  */
 function duplicator_package_build() {
+	
+	DUP_Util::CheckPermissions('export');
 	
 	@set_time_limit(0);
 	$errLevel = error_reporting();
@@ -61,6 +66,8 @@ function duplicator_package_build() {
 
 function duplicator_package_report() {
 	
+	DUP_Util::CheckPermissions('export');
+	
 	$scanReport = $_GET['scanfile'];
 	header('Content-Type: application/json');
 	header("Location: " . DUPLICATOR_SSDIR_URL . "/tmp/" . $scanReport);
@@ -78,6 +85,8 @@ function duplicator_package_report() {
  */
 function duplicator_package_delete() {
 	
+	DUP_Util::CheckPermissions('export');
+	
     try {
 		global $wpdb;
 		$json		= array();
@@ -90,11 +99,12 @@ function duplicator_package_delete() {
         if ($postIDs != null) {
             
             foreach ($list as $id) {
-				$getResult = $wpdb->get_results("SELECT name, hash FROM `{$tblName}` WHERE id = {$id}", ARRAY_A);
+				
+				$getResult = $wpdb->get_results($wpdb->prepare("SELECT name, hash FROM `{$tblName}` WHERE id = %d", $id), ARRAY_A);
 				if ($getResult) {
 					$row		=  $getResult[0];
 					$nameHash	= "{$row['name']}_{$row['hash']}";
-					$delResult	= $wpdb->query("DELETE FROM `{$tblName}` WHERE id = {$id}");
+					$delResult	= $wpdb->query($wpdb->prepare( "DELETE FROM `{$tblName}` WHERE id = %d", $id ));
 					if ($delResult != 0) {
 						//Perms
 						@chmod(DUP_Util::SafePath(DUPLICATOR_SSDIR_PATH_TMP . "/{$nameHash}_archive.zip"), 0644);
